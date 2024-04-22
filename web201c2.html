@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <style>
+        
+
+        *{
+            margin: 0;
+            padding: 0;
+            background-color: black;
+        }
+        .navbar {
+            display: flex;
+           justify-content: space-evenly;
+            
+           padding: 20px ;
+         
+            color: white;
+            
+        }
+
+        .navbar img {
+            height: 30px;
+            margin-right: 10px;
+            padding-top: 8px;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: inline-flex;
+            color: white;
+        }
+
+        .navbar li  {
+            margin-left: 35px;
+            color:azure;
+            display: inline-flex;
+        }
+        .navbar li>a{
+            color:white;
+            font-size: medium;
+            padding-top: 12px;
+        }
+
+        
+
+        .navbar >a {
+            font: inherit;
+     color: white;
+   
+    white-space: nowrap;
+        }
+        .header{
+            padding: 100px;
+            text-align: center;
+            color: white;
+            -font-title: normal normal 700 1em 'Inter Tight', -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
+
+        }
+        .head>h1{
+            font-size: var(--fontSize-title-section, 4.2em);
+            color: white;
+        }
+        .navbar .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 120px;
+            z-index: 1;
+        }
+
+        .navbar .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .navbar .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .um-gradient-text {
+    background: -webkit-linear-gradient(var(--angle), var(--from), var(--to));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+        }
+        .button {
+            font: normal normal 500 1em var(--font-system), -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
+    color: rgb(248, 248, 248);
+    border: 2px solid transparent; 
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 0;
+   display: inline-flex;
+    outline: none;
+    padding: 0.7em 0.8em;
+    position: relative;
+    font-size: 14px;
+    background: rgb(240 240 240 / 0%);
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0);
+    box-sizing: border-box;
+    transition: all 0.2s ease-in-out;
+    align-items: center;
+    border-color: rgba(227, 227, 227, 0.18);
+    border-style: solid;
+   
+ 
+    justify-content: center;
+    text-decoration: none;
+}
+.button:hover {
+    border-image: linear-gradient(45deg, rgb(59, 14, 242), rgb(136, 0, 209)) 1;
+    border-image-slice: 1;
+    border-radius: 10px;
+}
+.material-symbols-outlined{
+    display: inline-flex;
+   
+}
+.head>p{
+    color: gray;
+    font-size: 1.2rem;
+}
+.search-button {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+.search-button:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+  .feat{
+    color:rgba(115,39,239,1);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   
+  }
+.box1{
+    display: inline-block;
+    padding: 200px;
+}
+
+h2{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2.5em;
+} 
+ .cards{
+    color: rgb(200, 200, 200);;
+    width: calc(33.333% - 2em);
+    display: inline-flex;
+    background: rgb(24, 24, 27);
+    box-shadow: 0px 8px 24px 0px rgba(0,0,0,0.42000000000000004);
+    box-sizing: border-box;
+    align-items: flex-start;
+    padding-top: 1.6em;
+    border-color: rgb(49, 49, 49);
+    border-style: solid;
+    border-width: 0px;
+    padding-left: 1.6em;
+    border-radius: 10px;
+    margin-top: 1.6em;
+    margin-bottom: 3em;
+    margin-right: 2em;
+    flex-direction: row;
+    padding: 30px ;
+ }
+ 
+
+    </style>
+
+</head>
+<body>
+    <div class="navbar">
+        <div>
+            <img src="https://www.umso.com/lib_LUGoPiqXXlDptSWA/csi5g5qmp4uscbth.png" alt="Left Image">
+            
+        </div>
+        <ul>
+            <li class="dropdown">
+                <a >Pricing</a>
+                
+            </li>
+            <li class="dropdown">
+                <a >Features</a>
+                <div class="dropdown-content">
+                    <a href="#">Feature 1</a>
+                    <a href="#">Feature 2</a>
+                    <a href="#">Feature 3</a>
+                </div>
+            </li>
+            <li>
+                <a>Showcase</a>
+            </li>
+           
+           
+           <li><button  class="button">Login</button></li>
+            <li><button class="button" >Sign Up <span class="material-symbols-outlined">
+                arrow_right_alt
+                </span></button></li>
+        </ul>
+    </div>
+    <section class="header">
+        <div>
+            <header class="head">
+                <h1>
+                     Get Your 
+                    
+                    <br>
+                    <span class="um-gradient-text" style="--from:rgb(59, 14, 242);--to:rgb(136, 0, 209);--angle:45deg">AI Generated Website</span>
+                    <br>
+                    In Seconds
+                </h1>
+                <p>
+                    Give it a try right below, without having to sign up!
+                </p>
+            </header>
+        </div>
+        <form action="">
+            <input type="text" placeholder="" width="100px" height="30px">
+            <button class="search-button" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+            </button></form>
+
+    </section>
+    <section class="box1">
+        <h3 class="feat">FEATURES</h3>
+        <br>
+        
+        <h2 >Generating your website is just the start.
+            <br>
+            With Umso you can go all the way. 
+        </h2>
+        <br>
+        <div id="cd">
+            <div class="cards">
+                <svg xmlns="http://www.w3.org/2000/svg" class="um-icon _c03ae019" fill="rgb(114, 94, 255)" width="24" height="24" viewBox="0 0 24 24"><path d="M3.5 18.49l6-6.01 4 4L22 6.92l-1.41-1.41-7.09 7.97-4-4L2 16.99z"></path></svg>
+                <h3 class="analytics" style="color: white;">Analytics</h3>
+                <span style="color: white;">Monitor the performance of your startup and base decisions on data. Get website analytics with no extra setup.</span>
+                <button>
+                    <span style="color: white;">Learn More</span>
+                </button>
+            </div>
+            
+            <div class="cards">
+                <svg xmlns="http://www.w3.org/2000/svg" class="um-icon _c03ae019" fill="rgb(114, 94, 255)" width="24" height="24" viewBox="0 0 24 24"><path d="M3.5 18.49l6-6.01 4 4L22 6.92l-1.41-1.41-7.09 7.97-4-4L2 16.99z"></path></svg>
+                <h3 class="analytics" style="color: white;">Analytics</h3>
+                <span style="color: white;">Monitor the performance of your startup and base decisions on data. Get website analytics with no extra setup.</span>
+                <button>
+                    <span style="color: white;">Learn More</span>
+                </button> </div>
+            <div class="cards"><svg xmlns="http://www.w3.org/2000/svg" class="um-icon _c03ae019" fill="rgb(114, 94, 255)" width="24" height="24" viewBox="0 0 24 24"><path d="M3.5 18.49l6-6.01 4 4L22 6.92l-1.41-1.41-7.09 7.97-4-4L2 16.99z"></path></svg>
+                <h3 class="analytics" style="color: white;">Analytics</h3>
+                <span style="color: white;">Monitor the performance of your startup and base decisions on data. Get website analytics with no extra setup.</span>
+                <button>
+                    <span style="color: white;">Learn More</span>
+                </button></div>
+            <div class="cards"><svg xmlns="http://www.w3.org/2000/svg" class="um-icon _c03ae019" fill="rgb(114, 94, 255)" width="24" height="24" viewBox="0 0 24 24"><path d="M3.5 18.49l6-6.01 4 4L22 6.92l-1.41-1.41-7.09 7.97-4-4L2 16.99z"></path></svg>
+                <h3 class="analytics" style="color: white;">Analytics</h3>
+                <span style="color: white;">Monitor the performance of your startup and base decisions on data. Get website analytics with no extra setup.</span>
+                <button>
+                    <span style="color: white;">Learn More</span>
+                </button></div>
+            <div class="cards"><svg xmlns="http://www.w3.org/2000/svg" class="um-icon _c03ae019" fill="rgb(114, 94, 255)" width="24" height="24" viewBox="0 0 24 24"><path d="M3.5 18.49l6-6.01 4 4L22 6.92l-1.41-1.41-7.09 7.97-4-4L2 16.99z"></path></svg>
+                <h3 class="analytics" style="color: white;">Analytics</h3>
+                <span style="color: white;">Monitor the performance of your startup and base decisions on data. Get website analytics with no extra setup.</span>
+                <button>
+                    <span style="color: white;">Learn More</span>
+                </button></div>
+            <div class="cards"><svg xmlns="http://www.w3.org/2000/svg" class="um-icon _c03ae019" fill="rgb(114, 94, 255)" width="24" height="24" viewBox="0 0 24 24"><path d="M3.5 18.49l6-6.01 4 4L22 6.92l-1.41-1.41-7.09 7.97-4-4L2 16.99z"></path></svg>
+                <h3 class="analytics" style="color: white;">Analytics</h3>
+                <span style="color: white;">Monitor the performance of your startup and base decisions on data. Get website analytics with no extra setup.</span>
+                <button>
+                    <span style="color: white;">Learn More</span>
+                </button></div>
+        </div>
+    </section>
+
+</body>
+</html>
